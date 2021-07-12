@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <Navbar color="info" light expand="md">
       <NavbarBrand>
-        <Link to="/" className="text-white">
+        <Link to="/" className="text-white ">
           Gitfire App
         </Link>
       </NavbarBrand>
@@ -39,19 +39,19 @@ const Header = () => {
         <Nav className="ml-auto" navbar>
           {context.user ? (
             <NavItem>
-              <NavLink tag={Link} onClick={() => {context.setUser(null)}} className="text-white">
+              <NavLink tag={Link} className="btn btn-outline-warning" onClick={() => {context.setUser(null)}} className="text-white">
                 Logout
               </NavLink>
             </NavItem>
           ) : (
             <>
               <NavItem>
-                <NavLink tag={Link} to="/Signup" className="text-white">
+                <NavLink tag={Link} to="/Signup" className="text-white btn btn-outline-warning  m-2 p-2">
                   SignUp
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/Signin" className="text-white">
+                <NavLink tag={Link} to="/Signin" className="text-white btn btn-outline-warning m-2 p-2">
                   SignIn
                 </NavLink>
               </NavItem>
