@@ -1,6 +1,6 @@
 {
-  "homepage": "https://reetesh818.github.io/Gitsearch",
-  "name": "Gitsearch",
+  "homepage": "http://reetesh818.github.io/Welcome",
+  "name": "gitsearch",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,18 +18,14 @@
     "reactstrap": "^8.9.0",
     "sed": "0.0.2",
     "web-vitals": "^1.1.2"
-
-
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

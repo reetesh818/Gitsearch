@@ -27,6 +27,7 @@ import { UserContext } from './Context/UserContext'
 import Footer from './Layout/Footer'
 import Header from './Layout/Header'
 import FirebaseConfig from "./Config/FirebaseConfig"
+import Welcome from './Pages/Welcome'
 
 //init firebase
 firebase.initializeApp(FirebaseConfig);
@@ -44,6 +45,7 @@ const App = () => {
            <Route exact path="/" component={Home} /> 
           <Route  path="/Signin" component={Signin} />
           <Route  path="/Signup" component={Signup} />
+          <Route path="/Welcome" component={Welcome} />
           <Route  path="*" component={PageNotFound} /> 
          </Switch>
          
